@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(26, 26, 26);
+    visibility: hidden;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+
+      
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.fade-in-later {
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 1s ease-out 3s forwards;
+}
+#intro1 {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+    font-size: 3em;
+    animation-fill-mode: forwards;
+    margin-top: 5rem;
+    
+}
+#intro2 {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 0.5rem;
+    animation: 1.5s ease-out 0.4s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+    font-size: 3em;
+    
+}
+#intro3 {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    animation: fadeIn 2s ease-out 2s;
+    animation-fill-mode: forwards;
+    font-size: 3em;
+    
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    animation: fadeIn 3s ease-out 1s forwards;
+}
+
+.social-button {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.social-button:hover{
+    cursor: pointer;
+}
+
+.social-button img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+.projects {
+    text-align: center;
+}
+.project {
+    position: relative;
+    width: 60rem;
+    height: 30rem;
+    border-radius: 0.5rem;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 4rem;
+}
+
+.project img{
+    width: 60rem;
+    height: 30rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.project:hover{
+    cursor: pointer;
+}
+
+
+h4{
+    font-size: 3rem;
+    margin-bottom: -2rem;
+    font-weight: normal;
+    margin-top: 8rem;
+}
+
+.desc {
+    margin-top: -2rem;
+    font-size: 1.1rem;
+}
