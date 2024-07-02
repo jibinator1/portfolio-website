@@ -118,8 +118,28 @@ body {
     cursor: pointer;
 }
 
+.certificate {
+    position: relative;
+    width: 60rem;
+    height: 40rem;
+    border-radius: 0.5rem;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 4rem;
+}
 
-h4{
+.certificate img{
+    width: 60rem;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.certificate:hover{
+    cursor: pointer;
+}
+
+h5{
     font-size: 3rem;
     margin-bottom: -2rem;
     font-weight: normal;
@@ -129,4 +149,9 @@ h4{
 .desc {
     margin-top: -2rem;
     font-size: 1.1rem;
+}
+
+.sideLimit {
+    width: 80%;
+    margin-left: 10%;
 }
