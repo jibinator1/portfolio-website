@@ -1,18 +1,15 @@
 body {
     background-color: rgb(26, 26, 26);
     visibility: hidden;
-    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
     overflow: scroll;
     overflow-x: hidden;
-
-      
 }
 
 @keyframes slideInFromLeft {
     0% {
-        
-        transform: translateX(-100%);
+        transform: translateX(1000%);
         visibility: visible;
     }
     100% {
@@ -31,39 +28,58 @@ body {
         visibility: visible;
     }
 }
+
 .fade-in-later {
     opacity: 0;
     visibility: hidden;
     animation: fadeIn 1s ease-out 3s forwards;
 }
-#intro1 {
+
+.intro-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10rem;
+}
+
+.profile-image {
+    margin-left: 10rem; 
+    visibility: hidden;
+    animation: fadeIn 2s ease-out 1s forwards;
+}
+
+.circle {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 4.5rem;
+}
+
+.introduction{
+    margin-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro1, #intro2 {
     color: white;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
+    font-size: 4em;
+}
+
+#intro1 {
     animation: 1.5s ease-out 0s 1 slideInFromLeft;
-    font-size: 3em;
     animation-fill-mode: forwards;
-    margin-top: 5rem;
+    margin-top: 8rem;
     
 }
+
 #intro2 {
-    color: white;
-    font-weight: 400;
-    text-align: center;
-    margin-right: 0.5rem;
     animation: 1.5s ease-out 0.4s 1 slideInFromLeft;
     animation-fill-mode: forwards;
-    font-size: 3em;
-    
-}
-#intro3 {
-    color: white;
-    font-weight: 400;
-    text-align: center;
-    animation: fadeIn 2s ease-out 2s;
-    animation-fill-mode: forwards;
-    font-size: 3em;
-    
 }
 
 .social-media-links {
@@ -155,3 +171,11 @@ h5{
     width: 80%;
     margin-left: 10%;
 }
+
+.circle img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    object-fit: cover;
+}
+
