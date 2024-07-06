@@ -14,5 +14,23 @@ function projects() {
 };
 
 function contact() {
-    window.scrollIntoView({ top: 0, behavior: 'smooth' });
+    const contact = document.getElementById('contact');
+    contact.scrollIntoView({behavior: 'smooth', block: 'start'});
 };
+
+function copy() {
+    navigator.clipboard.writeText("jibin.im4e@gmail.com");
+
+    const checkmark = document.createElement('span');
+    checkmark.classList.add('checkmark');
+    checkmark.innerHTML = 'copied &#10003;';
+
+    const copiedConfirmation = document.getElementById('copiedConfirmation');
+    copiedConfirmation.appendChild(checkmark); 
+
+    setTimeout(() => {
+        copiedConfirmation.removeChild(checkmark);
+    }, 2000);
+    
+}
+

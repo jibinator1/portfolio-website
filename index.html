@@ -17,6 +17,7 @@
             <li><a onclick = "contact()">Contact</a></li>
         </ul>
     </nav>
+
     
     <div class = "intro-container">
         <div class = "introduction">
@@ -24,12 +25,15 @@
             <h2 id = "intro2">2nd Year in Data Science</h2>
         </div>
         
+        <p style = "visibility: visible;">Unfinished Version</p><!--REMOVE AFTER FINAL VERSION-->
         
         <div class = "profile-image">
             <img src="profile.webp" class="circle">
         </div>
     </div>
     <div class="fade-in-later">
+        <a class = "scroll-button" onclick = "home()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg></a>
         <div class = social-media-links>
             <a href = "https://www.linkedin.com/in/jibin-im/" target="_blank">
                 <button class = social-button>
@@ -46,7 +50,7 @@
         <div class = "sideLimit">
             <h5 style = "font-size: 4rem; text-align: center; margin-top: 50rem;" id = "aboutMe">About Me</h5>
             
-            <p class = "desc" style = "margin-top: 5rem; text-align: center; font-size: 1.5rem;">A first-year computer science University student at Wilfrid Laurier University, who received a $2,500 entrance scholarship. I finished my first semester with an average GPA excluding electives being 11.67. I plan on switching my degree to a data science major in the second year to focus more on computer science's statistics and math side. I also have an interest in the computer engineering route and even received the Award Of Excellence in Computer Engineering which is conferred on a student whose academic performance during the year demonstrates remarkable consistency at the highest level of achievement during my graduate year. I currently work at Walmart Pharmacy as an over-the-counter associate, working part-time in 8-hour shifts without any complaints. I am incredibly lenient with my time during work and am completely fine with giving up some lunch or break time to help out my co-workers when they are busy. I am also bilingual which has helped me service customers who can only speak Korean with their needs. My goal is to understand programming so well that I can create many side-projects to teach to others and inspire them as I once was.</p>
+            <p class = "desc" style = "margin-top: 5rem; text-align: center; font-size: 1.5rem;">Hello! I am a second-year data science University student at Wilfrid Laurier University. I have basic in common languages such as Java, Python, JavaScript, CSS and HTML. I have done many mini projects to further sharpen my skills as a programmer as at the moment, I am broadening my expertise to explore where I believe my skills and interests align best within the field. I am currently trying to master the basic of these languages so I can focus on more intermediate parts in the future that is more catered towards my field. You can see my current projects below to see my progress. I appreciate any advice given and would love to hear about any of your projects that helped you so I can try and build it for myself!</p>
         </div>
 
         <p style = "font-size: 4rem; text-align: center; margin-top: 50rem;" id = "myProjects">My Projects</p>
@@ -107,10 +111,17 @@
 
         </div>
 
+        <div id = contact>
+            <h5  style = "font-size: 4rem; text-align: center; margin-top: 25rem;">Contact Me</h5>
+            <a href = "mailto:jibin.im4e@gmail.com" target=”_blank” class = "contactRedirect">Click Here!</a>
+            <p style = "font-size: 1.5em;">or</p>
+            <a onclick = "copy()" class = "copyButton" >Click My Gmail to Copy: <span id = "email">jibin.im4e@gmail.com </span><span id = copiedConfirmation></span></a>
+            <p class = "desc" style = "bottom: 0; font-size: 1.7em; margin-top: 30rem;">While I may not have all the answers, I can promise I will give my absolute best effort in every task</p>
+        </div>
+
 
  
     </div>
-    <p style = "margin-top:100rem;"></p>
     <script src="index.js"></script>
 </body>
 </html>
