@@ -8,6 +8,16 @@
     
 </head>
 <body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a onclick = "home()">Home</a></li>
+            <li><a onclick = "aboutMe()">About Me</a></li>
+            <li><a onclick = "projects()">Projects</a></li>
+            <li><a onclick = "contact()">Contact</a></li>
+        </ul>
+    </nav>
+    
     <div class = "intro-container">
         <div class = "introduction">
             <h1 id = "intro1">Hi, I'm Jibin</h1>
@@ -34,14 +44,14 @@
         </div>
         
         <div class = "sideLimit">
-            <h5 style = "font-size: 4rem; text-align: center; margin-top: 50rem;">About Me</h5>
+            <h5 style = "font-size: 4rem; text-align: center; margin-top: 50rem;" id = "aboutMe">About Me</h5>
             
             <p class = "desc" style = "margin-top: 5rem; text-align: center; font-size: 1.5rem;">A first-year computer science University student at Wilfrid Laurier University, who received a $2,500 entrance scholarship. I finished my first semester with an average GPA excluding electives being 11.67. I plan on switching my degree to a data science major in the second year to focus more on computer science's statistics and math side. I also have an interest in the computer engineering route and even received the Award Of Excellence in Computer Engineering which is conferred on a student whose academic performance during the year demonstrates remarkable consistency at the highest level of achievement during my graduate year. I currently work at Walmart Pharmacy as an over-the-counter associate, working part-time in 8-hour shifts without any complaints. I am incredibly lenient with my time during work and am completely fine with giving up some lunch or break time to help out my co-workers when they are busy. I am also bilingual which has helped me service customers who can only speak Korean with their needs. My goal is to understand programming so well that I can create many side-projects to teach to others and inspire them as I once was.</p>
         </div>
 
-        <p style = "font-size: 4rem; text-align: center; margin-top: 50rem;"id = "myProjects">My Projects</p>
+        <p style = "font-size: 4rem; text-align: center; margin-top: 50rem;" id = "myProjects">My Projects</p>
         
-        <div class = "projects">
+        <div id = "projects">
             <div>
                 <h5 style = "margin-top: 10rem;">BokChourney</h5>
                     <a href = "https://jibinator1.github.io/Bok-Chourney-Weather-App-/" target="_blank">

@@ -1,12 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
+function home() {
+    window.scrollTo({ top: 0, behavior: 'smooth', block: 'start'});    
+};
 
-    async function projectScroll() {
-        await new Promise(resolve => setTimeout(resolve, 4000));
+function aboutMe() {
+    const aboutMe = document.getElementById('aboutMe');
+    aboutMe.scrollIntoView({behavior: 'smooth', block: 'start'});
+};
 
-        const myProjectElement = document.getElementById('myProjects');
-        if (myProjectElement) {
-            myProjectElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    }
-    projectScroll();
-});
+function projects() {
+    const projects = document.getElementById('myProjects');
+    projects.scrollIntoView({behavior: 'smooth', block: 'start'});
+
+};
+
+function contact() {
+    window.scrollIntoView({ top: 0, behavior: 'smooth' });
+};
